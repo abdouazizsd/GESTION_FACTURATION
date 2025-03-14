@@ -1,0 +1,85 @@
+/* Styles généraux pour le formulaire */
+
+
+form {
+    margin: 0 auto;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+    max-width: 600px;
+    background-color: #f9f9f9;
+}
+
+/* Styles pour les éléments de liste */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+form li + li {
+    margin-top: 1em;
+}
+
+/* Styles pour les labels */
+label {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+/* Styles pour les champs de saisie et les zones de texte */
+input[type="text"],
+input[type="number"],
+select {
+    font: 1em sans-serif;
+    width: calc(100% - 170px);
+    box-sizing: border-box;
+    border: 1px solid #999;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+input:focus,
+select:focus {
+    border-color: #000;
+}
+
+/* Styles pour les sections de produits */
+.product-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5em;
+}
+
+.product-item label {
+    width: auto;
+    text-align: left;
+    margin-right: 10px;
+}
+
+.product-item input[type="number"] {
+    width: 60px;
+    margin-left: 10px;
+}
+
+/* Styles pour le bouton de soumission */
+button[type="submit"] {
+    margin-top: 1em;
+    padding: 0.7em 1.5em;
+    border: none;
+    border-radius: 0.3em;
+    background-color: #0056B3;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #004494;
+}

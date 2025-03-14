@@ -1,0 +1,177 @@
+/* Styles de base pour le body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Conteneur principal */
+.container {
+    width: 100%;
+    margin: 2px auto;
+    overflow: hidden;
+    background-color: #ebebef;
+}
+/* Style du logo */
+.logo {
+    height: 40px; /* Ajuste la taille du logo */
+    width: auto;
+}
+
+
+/* ########################### Styles personnalisés pour le tableau ########################################*/
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse; /* Fusionner les bordures des cellules */
+    border-radius: 30px; /* Coins arrondis */
+    overflow: hidden; /* Pour que le border-radius s'applique correctement */
+    border: 2px solid #dee2e6; /* Bordure légère */
+    background-color: rgb(127, 174, 255); /* Fond blanc pour le tableau */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+.card-header{
+    background-color: #332de7;/* Fond bleu pour l'en-tête */
+    color: white; /* Texte blanc */
+    text-align: center;
+}
+.custom-table thead {
+    background-color: #cbd3e2; /* Fond bleu pour l'en-tête */
+    color: white; /* Texte blanc */
+    text-align: center;
+}
+
+.custom-table th,
+.custom-table td {
+    padding: 12px; /* Espacement interne pour les cellules */
+    text-align: left; /* Alignement du texte à gauche */
+}
+
+.custom-table th {
+    font-weight: 600; /* Texte en gras pour l'en-tête */
+}
+
+.custom-table tbody tr:hover {
+    background-color: #f8f9fa; /* Effet de survol pour les lignes */
+}
+
+.custom-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Alternance de couleurs pour les lignes */
+}
+
+/* Styles pour les boutons d'actions dans le tableau */
+.actions a {
+    margin: 0 5px; /* Espacement entre les boutons d'action */
+    text-decoration: none; /* Supprimer le soulignement des liens */
+    color: inherit; /* Hériter de la couleur du texte */
+}
+
+.actions a:hover {
+    opacity: 0.8; /* Effet de survol pour les boutons */
+}
+
+/* Styles pour les boutons personnalisés */
+.btn-custom {
+    margin: 5px; /* Espacement pour les boutons */
+    padding: 8px 16px; /* Espacement interne */
+    border-radius: 5px; /* Coins arrondis */
+    font-size: 14px; /* Taille de la police */
+    text-decoration: none; /* Supprimer le soulignement des liens */
+    display: inline-block; /* Affichage en ligne */
+    background-color: #0d6efd; /* Fond bleu pour les boutons */
+    color: white; /* Texte blanc */
+    border: none; /* Supprimer la bordure */
+}
+/* Styles pour les boutons personnalisés */
+.btn-custom1 {
+    margin: 5px; /* Espacement pour les boutons */
+    padding: 8px 16px; /* Espacement interne */
+    border-radius: 10px; /* Coins arrondis */
+    font-size: 14px; /* Taille de la police */
+    text-decoration: none; /* Supprimer le soulignement des liens */
+    display: inline-block; /* Affichage en ligne */
+    background-color: #32d82a; /* Fond bleu pour les boutons */
+    color: white; /* Texte blanc */
+    border: none; /* Supprimer la bordure */
+}
+.btn-custom:hover {
+    opacity: 0.9; /* Effet de survol pour les boutons */
+}
+
+/* ########################### Styles pour le formulaire ########################################*/
+
+.form-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    margin-bottom: 20px; /* Espacement sous le titre */
+    color: #333; /* Couleur du texte */
+    text-align: center; /* Centrer le titre */
+}
+
+.form-container label {
+    display: block; /* Afficher les labels en bloc */
+    margin-bottom: 8px; /* Espacement sous les labels */
+    font-weight: bold; /* Texte en gras */
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"],
+.form-container textarea,
+.form-container select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-container input[type="submit"] {
+    background-color: #0d6efd; /* Fond bleu pour le bouton */
+    color: white; /* Texte blanc */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-container input[type="submit"]:hover {
+    background-color: #ced7e5; /* Changement de couleur au survol */
+}
+
+/* ########################### Styles pour les messages d'alerte ########################################*/
+
+.alert {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.alert-info {
+    background-color: #d1ecf1;
+    color: #0c5460;
+    border: 1px solid #bee5eb;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.alert-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}

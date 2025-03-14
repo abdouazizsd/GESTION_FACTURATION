@@ -1,0 +1,121 @@
+/* dash.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+/* Header */
+.dashboard-header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.dashboard-header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.dashboard-header .menu-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.dashboard-header .logout-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-left: 20px;
+}
+
+.dashboard-header .logout-link:hover {
+    text-decoration: underline;
+}
+
+/* Sidebar */
+.dashboard-sidebar {
+    margin-top: 100px; /* Pour éviter que le menu ne soit caché sous le header */
+    background-color: #007bff;
+    color: white;
+    width: 200px;
+    height: 90vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 999;
+}
+
+.dashboard-sidebar.open {
+    transform: translateX(0);
+}
+
+.dashboard-sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dashboard-sidebar ul li {
+    padding: 15px 20px;
+    border-bottom: 1px solid #4b545c;
+}
+
+.dashboard-sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.dashboard-sidebar ul li a:hover {
+    background-color: #4b545c;
+}
+
+/* Contenu principal */
+.dashboard-content {
+    margin-top: 70px; /* Pour éviter que le contenu ne soit caché sous le header */
+    padding: 20px;
+    transition: margin-left 0.3s ease-in-out;
+    margin-left: 0;
+}
+
+.dashboard-content.open {
+    margin-left: 250px; /* Correspond à la largeur de la sidebar */
+}
+
+/* Messages */
+.success-message {
+    color: green;
+    background-color: #e6ffe6;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.error-message {
+    color: red;
+    background-color: #ffe6e6;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
